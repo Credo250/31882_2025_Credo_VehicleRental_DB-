@@ -1,0 +1,40 @@
+Slide 1 - Title
+Vehicle Rental Management Information System
+Student: Credo Darwin | StudentID: 31882/2025
+Course: DPR400210 - Database Programming (Oracle)
+
+Slide 2 - Problem & Context
+Problem: Manual rental operations cause double bookings, inefficient maintenance, and revenue misreporting.
+Context: Small/medium vehicle rental operations with multiple branches.
+
+Slide 3 - Objectives & Scope
+Objectives: Build normalized Oracle DB, implement PL/SQL, triggers, auditing, and an innovation dashboard (Power BI / APEX).
+Scope: Vehicles, Rentals, Customers, Payments, Maintenance, Branches, Audit, Public holidays.
+
+Slide 4 - Business Process (short)
+Actors: Customer, Branch Clerk, Fleet Manager, Accountant.
+Flow: Reservation -> Vehicle pickup -> Rental active -> Return -> Close rental -> Payment reconciliation.
+
+Slide 5 - ER Diagram (put ERD image)
+(Place ERD image: cars, customers, branches, rentals, payments, maintenance, public_holidays, audit_log)
+
+Slide 6 - Key Implementation (DB & PL/SQL)
+- Tables created with constraints and 3NF
+- business_rules_pkg enforces DML restrictions
+- business_logic_pkg implements create_rental, close_rental, calculations
+
+Slide 7 - Auditing & Security
+- audit_log populated by triggers on key tables
+- Read-only role for dashboards; app user for Power BI
+- Privilege separation and sample user scripts
+
+Slide 8 - Innovation: Power BI Dashboard
+- Key visuals: Revenue trend, utilization, top vehicles, active rentals
+- Refreshable dataset with Oracle connector
+
+Slide 9 - Demo screenshots
+- Schema screenshot, sample queries output, Power BI mockups (add images)
+
+Slide 10 - Conclusion & Next Steps
+- Summary of benefits and features
+- Next: complete APEX pages, expand reporting, schedule backups
